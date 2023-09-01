@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors"); // Fix typo here
 const mongoose = require("mongoose");
-const userRoutes = require("./routes/UserRouters");
+const userRoutes = require("./routes/UserRouters.js");
 
 const app = express();
 
