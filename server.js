@@ -22,4 +22,8 @@ mongoose
 
 app.use("/", userRoutes);
 
+app.get('/test', (req, res)=>{
+  return res.status(200).json({status:true, message: "Server run successfully"})
+})
+
 app.listen(5000, console.log("Server started on port 5000"));
