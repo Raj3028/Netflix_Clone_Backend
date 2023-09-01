@@ -19,6 +19,10 @@ mongoose.connect("mongodb+srv://raj_3028:SoVKWYnFbvC7Z9Ic@cluster0.pw23ckf.mongo
     console.error("Error connecting to the database:", err);
   });
 
-app.use("/api/user", userRoutes);
+app.use("/", userRoutes);
+
+app.get('/test', (req, res)=>{
+  return res.status(200).json({status:true, message: "Server run successfully"})
+})
 
 app.listen(5000, console.log("Server started on port 5000"));
