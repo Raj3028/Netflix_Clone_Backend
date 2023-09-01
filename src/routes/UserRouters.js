@@ -11,7 +11,7 @@ router.post("/add", addToLikedMovies);
 router.put("/remove", removeFromLikedMovies);
 
 router.get('/test', (req, res)=>{
-  return res.status(200).json({status:true, message: "Server run successfully"})
+  return res.status(200).json({status:true, message: "Server is running successfully"})
 })
 
 module.exports = router;
