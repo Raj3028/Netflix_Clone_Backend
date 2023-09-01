@@ -1,15 +1,14 @@
 const express = require("express");
 const cors = require("cors"); // Fix typo here
 const mongoose = require("mongoose");
-const userRoutes = require("./routes/UserRouters");
+const userRoutes = require("./src/routes/UserRouters");
 
 const app = express();
 
 app.use(cors()); // Fix typo here
 app.use(express.json());
 
-mongoose
-  .connect("mongodb+srv://raj_3028:SoVKWYnFbvC7Z9Ic@cluster0.pw23ckf.mongodb.net/netflix", {
+mongoose.connect("mongodb+srv://raj_3028:SoVKWYnFbvC7Z9Ic@cluster0.pw23ckf.mongodb.net/netflix", {
     useNewUrlParser: true, // Fix typo here
     useUnifiedTopology: true,
   })
