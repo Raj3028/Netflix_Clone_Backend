@@ -20,6 +20,6 @@ mongoose
     console.error("Error connecting to the database:", err);
   });
 
-app.use("/api/user", userRoutes);
+app.use("/", userRoutes);
 
 app.listen(5000, console.log("Server started on port 5000"));
